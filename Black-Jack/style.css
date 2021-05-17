@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+/* Utility */
+.d-none {
+    display: none;
+}
+
+.text-success {
+    color: rgb(0, 4, 255);
+}
+
+.text-danger {
+    color: rgb(255, 0, 0);
+}
+
+.text-draw {
+    color: rgb(160, 7, 134);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    height: 90vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 5vh;
+}
+
+.header {
+    /* margin-top: 0; */
+    height: 8%;
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 2px solid black;
+}
+
+.main {
+    height: 70%;
+    background-color: green;
+    flex-direction: column;
+
+    padding: 5px;
+}
+
+.play-area {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    border: 3px solid black;
+}
+
+.play-container {
+    flex: .5;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid black;
+}
+
+.play-header {
+    font-size: 24px;
+    height: 10%;
+    background-color: yellow;
+}
+
+.cards {
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.cards img{
+    max-width: 30%;
+    max-height: 40%;
+    margin: 4px;
+}
+
+.buttons {
+    height: 20%;
+    background: none;
+    border: 3px solid black;
+}
+
+.center {
+    height: 80%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+
+    outline: none;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hit {
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hit:hover {
+    background-color: rgba(0, 0, 255, 0.471);
+}
+
+.standard {
+    background-color: rgb(251, 255, 0);
+    cursor: pointer;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.standard:hover {
+    background-color: rgba(251, 255, 0, 0.671);
+}
+
+.deal {
+    background-color: red;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.deal:hover {
+    background-color: rgba(255, 0, 0, 0.76);
+}
+
+
+.score {
+    height: 14%;
+}
+
+table {
+    font-size: 24px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 4px;
+}

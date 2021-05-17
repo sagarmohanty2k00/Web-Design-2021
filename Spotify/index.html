@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spotify - home</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Side-Bar left -->
+        <div class="side-bar__left"></div>
+
+        <!-- Main Area -->
+        <div class="main"></div>
+
+        <!-- Side-Bar right -->
+        <div class="side-bar__right"></div>
+
+    </div>
+    <!-- Music Player -->
+    <div class="player">
+        <div class="info">
+            <p>Hauli Hauli(From "De De Pyaar De")</p>
+            <p style="color: var(--slate1);">Garry Sandhu, Neha Kakkar, Mellowed, Tanishk Bagchi</p>
+        </div>
+        <div class="controller">
+            <div class="controller__buttons">
+                <i class="fa fa-random" id="shuffle" style="font-size:16px;" onclick="shuffle()"></i>
+                <i class='fa fa-step-backward' id="prev" style="font-size:24px;"></i>
+                <i class='fa fa-play-circle-o' id="playpause" style="font-size:48px;" onclick="togglePlaypause()"></i>
+                <i class='fa fa-step-forward' id="next" style="font-size:24px;"></i>
+                <i class="fa fa-refresh" id="loop" style="font-size:16px;" onclick="loop()"></i>
+            </div>
+            <div class="controller__progress"></div>
+        </div>
+        <div class="controller__extra"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

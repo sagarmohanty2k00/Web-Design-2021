@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="header">
+            <h1>Black Jack</h1>
+        </div>
+
+
+        <div class="header">
+            <h2>Let's Play Holi</h2>
+            <h2 id="result_success" class="text-success d-none">*** YOU WON !! 🎉 ***</h2>
+            <h2 id="result_fail" class="text-danger d-none">*** YOU LOSE !! 😔 ***</h2>
+            <h2 id="result_draw" class="text-draw d-none">*** IT'S A DRAW !! ***</h2>
+        </div>
+
+
+        <div class="main header">
+            <div class="play-area">
+
+                <div class="play-container">
+                    <div class="play-header">You : <span id="score1">0</span></div>
+
+                    <h2 id="result_burst1" class="text-burst d-none">*** BURST ***</h2>
+                    <div class="cards" id="cards1">
+                        <!-- Cards will go here -->
+                        
+                    </div>
+                </div>
+                
+                <div class="play-container">
+                    <div class="play-header">Dealer : <span id="score2">0</span></div>
+                    
+                    <h2 id="result_burst2" class="text-burst d-none">*** BURST ***</h2>
+                    <div class="cards" id="cards2">
+                        <!-- Cards will go here -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="buttons header">
+                <div class="center">
+                    <button class="hit btn" onclick="hit()" >Hit</button>
+                    <button class="standard btn" onclick="stand()" >Stand</button>
+                    <button class="deal btn" onclick="deal()" >Deal</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="score header">
+            <table border="1" >
+                <thead>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </thead>
+                <tr>
+                    <td id="win">0</td>
+                    <td id="loss">0</td>
+                    <td id="draw">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
